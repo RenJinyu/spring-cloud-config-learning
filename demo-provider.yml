@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: application-service
+
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://192.168.190.132:8761/eureka,http://192.168.190.133:8761/eureka
+      defaultZone: http://localhost:8761/eureka
+
+# 设置负载均衡策略。application-service 为设置负载均衡的服务名称
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
+# application-service ： 要点对点直连的远程服务命名
+#application-service:
+#  ribbon:
+#    listOfServers: localhost:8081,localhost:8091

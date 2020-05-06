@@ -1,0 +1,15 @@
+server:
+  # Spring Cloud Config 服务端默认端口为 8888，可以自定义修改。
+  port: 8888
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RenJinyu/spring-cloud-config-learning.git
+          username: telepathyren@gmail.com
+          password: avatar515dgithub
+
